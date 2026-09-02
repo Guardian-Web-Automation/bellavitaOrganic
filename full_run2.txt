@@ -1,0 +1,18 @@
+◇ injected env (4) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
+TimeoutError: page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://bellavitaorganic.com/", waiting until "domcontentloaded"
+
+
+   at ..\global-setup.ts:18
+
+  16 |   const page = await browser.newPage();
+  17 |
+> 18 |   await page.goto(baseURL, { waitUntil: 'domcontentloaded' });
+     |              ^
+  19 |
+  20 |   // Cloudflare may serve a Turnstile "verify you are human" challenge before the
+  21 |   // storefront (or its password gate) is reachable. Solve it via 2Captcha first.
+    at globalSetup (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\global-setup.ts:18:14)
+

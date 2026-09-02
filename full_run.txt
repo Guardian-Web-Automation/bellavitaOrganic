@@ -1,0 +1,712 @@
+◇ injected env (4) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+
+Running 18 tests using 1 worker
+
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+  ✘   1 [chromium] › tests\cart.spec.ts:16:7 › Cart › added item appears in the cart drawer with correct count and total (23.1s)
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+  ✘   2 [chromium] › tests\cart.spec.ts:16:7 › Cart › added item appears in the cart drawer with correct count and total (retry #1) (23.1s)
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+  ✘   3 [chromium] › tests\cart.spec.ts:23:7 › Cart › quantity selector respects the line item stock/order limit (23.2s)
+◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
+  ✘   4 [chromium] › tests\cart.spec.ts:23:7 › Cart › quantity selector respects the line item stock/order limit (retry #1) (23.1s)
+◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+  ✘   5 [chromium] › tests\cart.spec.ts:38:7 › Cart › removing the only item empties the cart (22.8s)
+◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+  ✘   6 [chromium] › tests\cart.spec.ts:38:7 › Cart › removing the only item empties the cart (retry #1) (23.2s)
+◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+  ✘   7 [chromium] › tests\home.spec.ts:8:7 › Home page › loads successfully (23.2s)
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+  ✘   8 [chromium] › tests\home.spec.ts:8:7 › Home page › loads successfully (retry #1) (22.6s)
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+  ✓   9 [chromium] › tests\home.spec.ts:14:7 › Home page › has a non-empty page title (740ms)
+  ✘  10 [chromium] › tests\home.spec.ts:19:7 › Home page › header is visible (21.7s)
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+  ✘  11 [chromium] › tests\home.spec.ts:19:7 › Home page › header is visible (retry #1) (22.1s)
+◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+  ✘  12 [chromium] › tests\navigation.spec.ts:9:7 › Navigation › clicking the logo returns to the home page (22.0s)
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+  ✘  13 [chromium] › tests\navigation.spec.ts:9:7 › Navigation › clicking the logo returns to the home page (retry #1) (22.1s)
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+  ✘  14 [chromium] › tests\navigation.spec.ts:17:7 › Navigation › opening the cart shows the cart drawer (21.9s)
+◇ injected env (0) from .env // tip: ⌘ enable debugging { debug: true }
+  ✘  15 [chromium] › tests\navigation.spec.ts:17:7 › Navigation › opening the cart shows the cart drawer (retry #1) (21.8s)
+◇ injected env (0) from .env // tip: ⌘ enable debugging { debug: true }
+  ✓  16 [chromium] › tests\navigation.spec.ts:22:7 › Navigation › login link goes to customer authentication (1.0s)
+  ✘  17 [chromium] › tests\navigation.spec.ts:29:7 › Navigation › clicking a promo banner link navigates to the collection (21.7s)
+◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+  ✘  18 [chromium] › tests\navigation.spec.ts:29:7 › Navigation › clicking a promo banner link navigates to the collection (retry #1) (22.2s)
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+  ✘  19 [chromium] › tests\pdp.spec.ts:13:7 › Product detail page › loads with a title and price (22.2s)
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+  ✘  20 [chromium] › tests\pdp.spec.ts:13:7 › Product detail page › loads with a title and price (retry #1) (22.7s)
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+  ✘  21 [chromium] › tests\pdp.spec.ts:22:7 › Product detail page › quantity selector increases and decreases within its allowed max (21.9s)
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+  ✘  22 [chromium] › tests\pdp.spec.ts:22:7 › Product detail page › quantity selector increases and decreases within its allowed max (retry #1) (21.9s)
+◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+  ✓  23 [chromium] › tests\pdp.spec.ts:39:7 › Product detail page › adding to cart opens the cart drawer with the item (7.8s)
+  ✓  24 [chromium] › tests\plp.spec.ts:9:7 › Collection page (PLP) › renders a grid of product cards (3.0s)
+  ✓  25 [chromium] › tests\plp.spec.ts:13:7 › Collection page (PLP) › clicking a product card navigates to its product detail page (8.0s)
+  ✓  26 [chromium] › tests\search.spec.ts:5:7 › Search › searching a valid term returns results (2.5s)
+  ✓  27 [chromium] › tests\search.spec.ts:10:7 › Search › searching a nonsense term shows no results (2.7s)
+  ✓  28 [chromium] › tests\search.spec.ts:15:7 › Search › search from header navigates to search results (6.5s)
+
+
+  1) [chromium] › tests\cart.spec.ts:16:7 › Cart › added item appears in the cart drawer with correct count and total 
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('button[name="add"]').first() to be visible
+
+
+       at ..\pages\ProductPage.ts:77
+
+      75 |     // `networkidle` is avoided deliberately: this store has continuous
+      76 |     // background requests and never reaches it.
+    > 77 |     await this.addToCartButton.waitFor({ state: 'visible' });
+         |                                ^
+      78 |     await this.page
+      79 |       .waitForFunction(
+      80 |         () => {
+        at ProductPage.addToCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:77:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\cart.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('button[name="add"]').first() to be visible
+
+
+       at ..\pages\ProductPage.ts:77
+
+      75 |     // `networkidle` is avoided deliberately: this store has continuous
+      76 |     // background requests and never reaches it.
+    > 77 |     await this.addToCartButton.waitFor({ state: 'visible' });
+         |                                ^
+      78 |     await this.page
+      79 |       .waitForFunction(
+      80 |         () => {
+        at ProductPage.addToCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:77:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\cart.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cart-Cart-added-item-appea-b6924-ith-correct-count-and-total-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\cart.spec.ts:23:7 › Cart › quantity selector respects the line item stock/order limit 
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('button[name="add"]').first() to be visible
+
+
+       at ..\pages\ProductPage.ts:77
+
+      75 |     // `networkidle` is avoided deliberately: this store has continuous
+      76 |     // background requests and never reaches it.
+    > 77 |     await this.addToCartButton.waitFor({ state: 'visible' });
+         |                                ^
+      78 |     await this.page
+      79 |       .waitForFunction(
+      80 |         () => {
+        at ProductPage.addToCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:77:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\cart.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('button[name="add"]').first() to be visible
+
+
+       at ..\pages\ProductPage.ts:77
+
+      75 |     // `networkidle` is avoided deliberately: this store has continuous
+      76 |     // background requests and never reaches it.
+    > 77 |     await this.addToCartButton.waitFor({ state: 'visible' });
+         |                                ^
+      78 |     await this.page
+      79 |       .waitForFunction(
+      80 |         () => {
+        at ProductPage.addToCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:77:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\cart.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cart-Cart-quantity-selecto-235f4-line-item-stock-order-limit-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\cart.spec.ts:38:7 › Cart › removing the only item empties the cart ─────────
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('button[name="add"]').first() to be visible
+
+
+       at ..\pages\ProductPage.ts:77
+
+      75 |     // `networkidle` is avoided deliberately: this store has continuous
+      76 |     // background requests and never reaches it.
+    > 77 |     await this.addToCartButton.waitFor({ state: 'visible' });
+         |                                ^
+      78 |     await this.page
+      79 |       .waitForFunction(
+      80 |         () => {
+        at ProductPage.addToCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:77:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\cart.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('button[name="add"]').first() to be visible
+
+
+       at ..\pages\ProductPage.ts:77
+
+      75 |     // `networkidle` is avoided deliberately: this store has continuous
+      76 |     // background requests and never reaches it.
+    > 77 |     await this.addToCartButton.waitFor({ state: 'visible' });
+         |                                ^
+      78 |     await this.page
+      79 |       .waitForFunction(
+      80 |         () => {
+        at ProductPage.addToCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:77:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\cart.spec.ts:13:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cart-Cart-removing-the-only-item-empties-the-cart-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests\home.spec.ts:8:7 › Home page › loads successfully ──────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       9 |     // The store redirects www -> non-www, so match the bare host.
+      10 |     await expect(page).toHaveURL(/bellavitaorganic\.com/);
+    > 11 |     expect(await homePage.isLoaded()).toBeTruthy();
+         |                                       ^
+      12 |   });
+      13 |
+      14 |   test('has a non-empty page title', async ({ homePage }) => {
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\home.spec.ts:11:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\home-Home-page-loads-successfully-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\home-Home-page-loads-successfully-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\home-Home-page-loads-successfully-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       9 |     // The store redirects www -> non-www, so match the bare host.
+      10 |     await expect(page).toHaveURL(/bellavitaorganic\.com/);
+    > 11 |     expect(await homePage.isLoaded()).toBeTruthy();
+         |                                       ^
+      12 |   });
+      13 |
+      14 |   test('has a non-empty page title', async ({ homePage }) => {
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\home.spec.ts:11:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\home-Home-page-loads-successfully-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\home-Home-page-loads-successfully-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\home-Home-page-loads-successfully-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\home-Home-page-loads-successfully-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\home-Home-page-loads-successfully-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests\home.spec.ts:19:7 › Home page › header is visible ──────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      18 |
+      19 |   test('header is visible', async ({ headerComponent }) => {
+    > 20 |     expect(await headerComponent.isVisible()).toBeTruthy();
+         |                                               ^
+      21 |   });
+      22 | });
+      23 |
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\home.spec.ts:20:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\home-Home-page-header-is-visible-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\home-Home-page-header-is-visible-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\home-Home-page-header-is-visible-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      18 |
+      19 |   test('header is visible', async ({ headerComponent }) => {
+    > 20 |     expect(await headerComponent.isVisible()).toBeTruthy();
+         |                                               ^
+      21 |   });
+      22 | });
+      23 |
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\home.spec.ts:20:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\home-Home-page-header-is-visible-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\home-Home-page-header-is-visible-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\home-Home-page-header-is-visible-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\home-Home-page-header-is-visible-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\home-Home-page-header-is-visible-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › tests\navigation.spec.ts:9:7 › Navigation › clicking the logo returns to the home page 
+
+    TimeoutError: locator.click: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('header.header').first().locator('a.header__heading-link').first()
+
+
+       at ..\pages\HeaderComponent.ts:41
+
+      39 |
+      40 |   async clickLogo(): Promise<void> {
+    > 41 |     await this.logoLink.click();
+         |                         ^
+      42 |   }
+      43 |
+      44 |   async openSearch(): Promise<void> {
+        at HeaderComponent.clickLogo (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\HeaderComponent.ts:41:25)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\navigation.spec.ts:12:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.click: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('header.header').first().locator('a.header__heading-link').first()
+
+
+       at ..\pages\HeaderComponent.ts:41
+
+      39 |
+      40 |   async clickLogo(): Promise<void> {
+    > 41 |     await this.logoLink.click();
+         |                         ^
+      42 |   }
+      43 |
+      44 |   async openSearch(): Promise<void> {
+        at HeaderComponent.clickLogo (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\HeaderComponent.ts:41:25)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\navigation.spec.ts:12:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\navigation-Navigation-clic-139c0-go-returns-to-the-home-page-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › tests\navigation.spec.ts:17:7 › Navigation › opening the cart shows the cart drawer 
+
+    TimeoutError: locator.click: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('cart-drawer details.cart-drawer-container > summary').first()
+
+
+       at ..\pages\HeaderComponent.ts:55
+
+      53 |
+      54 |   async openCart(): Promise<void> {
+    > 55 |     await this.cartToggle.click();
+         |                           ^
+      56 |   }
+      57 |
+      58 |   async isCartDrawerOpen(): Promise<boolean> {
+        at HeaderComponent.openCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\HeaderComponent.ts:55:27)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\navigation.spec.ts:18:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.click: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('cart-drawer details.cart-drawer-container > summary').first()
+
+
+       at ..\pages\HeaderComponent.ts:55
+
+      53 |
+      54 |   async openCart(): Promise<void> {
+    > 55 |     await this.cartToggle.click();
+         |                           ^
+      56 |   }
+      57 |
+      58 |   async isCartDrawerOpen(): Promise<boolean> {
+        at HeaderComponent.openCart (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\HeaderComponent.ts:55:27)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\navigation.spec.ts:18:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\navigation-Navigation-opening-the-cart-shows-the-cart-drawer-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium] › tests\navigation.spec.ts:29:7 › Navigation › clicking a promo banner link navigates to the collection 
+
+    TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('main a.button--secondary[href*="/collections/"]').first()
+
+
+       at ..\pages\HomePage.ts:37
+
+      35 |     // product cards overlap it and intercept pointer events; force the click on
+      36 |     // the anchor, which still navigates to the collection.
+    > 37 |     await this.promoBannerLink.scrollIntoViewIfNeeded();
+         |                                ^
+      38 |     await this.promoBannerLink.click({ force: true });
+      39 |   }
+      40 | }
+        at HomePage.clickPromoBannerLink (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\HomePage.ts:37:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\navigation.spec.ts:30:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('main a.button--secondary[href*="/collections/"]').first()
+
+
+       at ..\pages\HomePage.ts:37
+
+      35 |     // product cards overlap it and intercept pointer events; force the click on
+      36 |     // the anchor, which still navigates to the collection.
+    > 37 |     await this.promoBannerLink.scrollIntoViewIfNeeded();
+         |                                ^
+      38 |     await this.promoBannerLink.click({ force: true });
+      39 |   }
+      40 | }
+        at HomePage.clickPromoBannerLink (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\HomePage.ts:37:32)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\navigation.spec.ts:30:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\navigation-Navigation-clic-7c5be-navigates-to-the-collection-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [chromium] › tests\pdp.spec.ts:13:7 › Product detail page › loads with a title and price ──────
+
+    TimeoutError: locator.textContent: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('.product__title').first()
+
+
+       at ..\pages\ProductPage.ts:45
+
+      43 |
+      44 |   async titleText(): Promise<string> {
+    > 45 |     return (await this.productTitle.textContent())?.trim() ?? '';
+         |                                     ^
+      46 |   }
+      47 |
+      48 |   async priceText(): Promise<string> {
+        at ProductPage.titleText (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:45:37)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\pdp.spec.ts:14:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.textContent: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('.product__title').first()
+
+
+       at ..\pages\ProductPage.ts:45
+
+      43 |
+      44 |   async titleText(): Promise<string> {
+    > 45 |     return (await this.productTitle.textContent())?.trim() ?? '';
+         |                                     ^
+      46 |   }
+      47 |
+      48 |   async priceText(): Promise<string> {
+        at ProductPage.titleText (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:45:37)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\pdp.spec.ts:14:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\pdp-Product-detail-page-loads-with-a-title-and-price-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [chromium] › tests\pdp.spec.ts:22:7 › Product detail page › quantity selector increases and decreases within its allowed max 
+
+    TimeoutError: locator.inputValue: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('.quantity__input').first()
+
+
+       at ..\pages\ProductPage.ts:53
+
+      51 |
+      52 |   async quantityValue(): Promise<string> {
+    > 53 |     return this.quantityInput.inputValue();
+         |                               ^
+      54 |   }
+      55 |
+      56 |   async quantityMax(): Promise<string | null> {
+        at ProductPage.quantityValue (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:53:31)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\pdp.spec.ts:23:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.inputValue: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('.product').first().locator('.quantity__input').first()
+
+
+       at ..\pages\ProductPage.ts:53
+
+      51 |
+      52 |   async quantityValue(): Promise<string> {
+    > 53 |     return this.quantityInput.inputValue();
+         |                               ^
+      54 |   }
+      55 |
+      56 |   async quantityMax(): Promise<string | null> {
+        at ProductPage.quantityValue (C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\pages\ProductPage.ts:53:31)
+        at C:\Users\gourav.kumar_oneguar\AI_SDLC_BELLAVITA_ORGANIC\tests\pdp.spec.ts:23:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\pdp-Product-detail-page-qu-9fc59-ases-within-its-allowed-max-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10 failed
+    [chromium] › tests\cart.spec.ts:16:7 › Cart › added item appears in the cart drawer with correct count and total 
+    [chromium] › tests\cart.spec.ts:23:7 › Cart › quantity selector respects the line item stock/order limit 
+    [chromium] › tests\cart.spec.ts:38:7 › Cart › removing the only item empties the cart ──────────
+    [chromium] › tests\home.spec.ts:8:7 › Home page › loads successfully ───────────────────────────
+    [chromium] › tests\home.spec.ts:19:7 › Home page › header is visible ───────────────────────────
+    [chromium] › tests\navigation.spec.ts:9:7 › Navigation › clicking the logo returns to the home page 
+    [chromium] › tests\navigation.spec.ts:17:7 › Navigation › opening the cart shows the cart drawer 
+    [chromium] › tests\navigation.spec.ts:29:7 › Navigation › clicking a promo banner link navigates to the collection 
+    [chromium] › tests\pdp.spec.ts:13:7 › Product detail page › loads with a title and price ───────
+    [chromium] › tests\pdp.spec.ts:22:7 › Product detail page › quantity selector increases and decreases within its allowed max 
+  8 passed (8.4m)

@@ -1,0 +1,28 @@
+{
+  "name": "ai_sdlc_bellavita_organic",
+  "version": "1.0.0",
+  "description": "Playwright POM test suite for Bellavita Organic",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:home": "playwright test tests/home.spec.ts",
+    "test:navigation": "playwright test tests/navigation.spec.ts",
+    "test:search": "playwright test tests/search.spec.ts",
+    "test:desktop": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=mobile-chromium",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://bellavitaorganic.com/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "dotenv": "^17.4.2",
+    "typescript": "^7.0.2"
+  }
+}
