@@ -5,3 +5,8 @@ playwright/.cache/
 auth/
 .env
 *.log
+
+# Local test-run logs
+full_run.txt
+full_run2.txt
+full_headed_run.txt

@@ -15,13 +15,16 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   // The storefront is slow and rate-limits sustained request volume from one IP
-  // (navigations start timing out ~22s under load), so run a single worker
-  // locally and retry twice to ride out transient throttling windows.
+  // (navigations start timing out ~22s under load, and Cloudflare challenges the
+  // AJAX API paths harder from datacenter IPs), so run a single worker and retry
+  // twice to ride out transient throttling windows — including in CI.
   retries: 2,
-  workers: process.env.CI ? 2 : 1,
+  workers: 1,
   reporter: [
     ['html', { open: 'never' }],
     ['list'],
+    // JSON summary consumed by the Slack notifier in CI.
+    ['json', { outputFile: 'test-results/results.json' }],
   ],
   globalSetup: require.resolve('./global-setup'),
   use: {

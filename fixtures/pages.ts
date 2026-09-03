@@ -9,6 +9,7 @@ import { CollectionPage } from '../pages/CollectionPage';
 import { MenuDrawer } from '../pages/MenuDrawer';
 import { SearchPopup } from '../pages/SearchPopup';
 import { CustomSearchResultsPage } from '../pages/CustomSearchResultsPage';
+import { BoxBuilder } from '../pages/BoxBuilder';
 
 type Pages = {
   homePage: HomePage;
@@ -21,6 +22,7 @@ type Pages = {
   menuDrawer: MenuDrawer;
   searchPopup: SearchPopup;
   customSearchResultsPage: CustomSearchResultsPage;
+  boxBuilder: BoxBuilder;
 };
 
 export const test = base.extend<Pages>({
@@ -53,6 +55,9 @@ export const test = base.extend<Pages>({
   },
   customSearchResultsPage: async ({ page }, use) => {
     await use(new CustomSearchResultsPage(page));
+  },
+  boxBuilder: async ({ page }, use) => {
+    await use(new BoxBuilder(page));
   },
 });
 
